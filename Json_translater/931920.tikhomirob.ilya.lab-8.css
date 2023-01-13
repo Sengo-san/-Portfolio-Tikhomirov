@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+#linescontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#jsText {
+    font-family: monospace;
+}
+
+.jsline {
+    display: inline-flex;
+}
+
+input {
+
+    border: solid 1px gray;
+}
+
+button {
+    border: solid 1px gray;
+}

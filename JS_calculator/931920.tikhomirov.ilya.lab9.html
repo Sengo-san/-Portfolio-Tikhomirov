@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="931920.tikhomirov.ilya.lab9.css" />
+    <meta charset="utf-8">
+    <title> Frontend Task №8 </title>
+
+    <script src="931920.tikhomirov.ilya.lab9.js"></script>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="monitor">
+            <div id="numberSaved"></div>
+            <div id="operator"></div>
+            <div id="numberInsert">0</div>
+        </div>
+        <button id="but0" onclick="digitInsert()">0</button>
+        <button id="but1" onclick="digitInsert()">1</button>
+        <button id="but2" onclick="digitInsert()">2</button>
+        <button id="but3" onclick="digitInsert()">3</button>
+        <button id="but4" onclick="digitInsert()">4</button>
+        <button id="but5" onclick="digitInsert()">5</button>
+        <button id="but6" onclick="digitInsert()">6</button>
+        <button id="but7" onclick="digitInsert()">7</button>
+        <button id="but8" onclick="digitInsert()">8</button>
+        <button id="but9" onclick="digitInsert()">9</button>
+        <button id="butDivide" onclick="operatorInsert()">/</button>
+        <button id="butMultiply" onclick="operatorInsert()">*</button>
+        <button id="butPlus" onclick="operatorInsert()">+</button>
+        <button id="butMinus" onclick="operatorInsert()">-</button>
+        <button id="butDot" onclick="dotInsert()">.</button>
+        <button id="butC" onclick="clearMonitor()">C</button>
+        <button id="butDel" onclick="del()"> ← </button>
+        <button id="butSolve" onclick="solve()">=</button>
+    </div>
+</body>

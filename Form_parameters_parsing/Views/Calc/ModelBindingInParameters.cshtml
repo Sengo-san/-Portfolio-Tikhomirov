@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Home Page - Backend2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="~/Styles/style.css" />
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Backend2</div>
+        <a href="~/"><div class="home-link">Home</div></a>
+    </header>
+
+    <div class="content">
+
+        <h2> Model Binding In Parameters </h2>
+        <form method="post">
+            <input type="number" name="xnum" required /><br />
+            <select name="oper">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select> <br />
+            <input type="number" name="ynum" required /><br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>© 2022 - Backend2</footer>
+</body>
+</html>

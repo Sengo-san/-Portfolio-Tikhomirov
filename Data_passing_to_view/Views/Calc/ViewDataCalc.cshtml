@@ -1,0 +1,43 @@
+﻿@{
+    var calcData = ViewData["CalcData"] as using _Data_passing_to_view.Models.CalcData;
+}
+
+<!doctype html>
+<html>
+<head>
+    <title> PassUsingViewData - Backend1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="~/Styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Backend1</div>
+        <a href="~/"><div class="home-link">Home</div></a>
+    </header>
+    <div class="content">
+        <h2> PassUsingViewData </h2>
+        <div class="calculations">
+            <b>Rand Value First : @calcData.xnum </b> <br />
+            <b>Rand Value Second : @calcData.ynum </b><br />
+            <b>Add : </b><br />
+            @calcData.xnum + @calcData.ynum = @calcData.add <br />
+            <b>Sub : </b><br />
+            @calcData.xnum - @calcData.ynum = @calcData.sub <br />
+            <b>Mult : </b><br />
+            @calcData.xnum * @calcData.ynum = @calcData.mult <br />
+            <b>Div : </b><br />
+            @calcData.xnum / @calcData.ynum =
+            @if (!calcData.divByZero)
+            {
+                @calcData.div
+            }
+            else
+            {
+                <mark>Error (division by 0)</mark>
+            }
+        </div>
+    </div>
+    <footer>© 2022 - Backend1</footer>
+</body>
+</html>

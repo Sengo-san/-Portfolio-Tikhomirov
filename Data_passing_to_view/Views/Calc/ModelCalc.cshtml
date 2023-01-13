@@ -1,0 +1,35 @@
+﻿@model _Data_passing_to_view.Models.CalcData
+
+<!doctype html>
+<html>
+<head>
+    <title> PassUsingModel - Backend1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="~/Styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Backend1</div>
+        <a href="~/"><div class="home-link">Home</div></a>
+    </header>
+    <div class="content">
+        <h2> PassUsingModel </h2>
+        <div class="calculations">
+           <b>Rand Value First : @Model.xnum </b> <br />
+           <b>Rand Value Second : @Model.ynum </b><br />
+           <b>Add : </b><br />
+           @Model.xnum + @Model.ynum = @Model.add <br />
+           <b>Sub : </b><br />
+           @Model.xnum - @Model.ynum = @Model.sub <br />
+           <b>Mult : </b><br />
+           @Model.xnum * @Model.ynum = @Model.mult <br />
+           <b>Div : </b><br />
+           @Model.xnum / @Model.ynum =
+            @if (!Model.divByZero) {@Model.div;}
+            else {<mark>Error (division by 0)</mark>}
+        </div>
+    </div>
+    <footer>© 2022 - Backend1</footer>
+</body>
+</html>
